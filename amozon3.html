@@ -14,6 +14,7 @@
             font-family: Arial, sans-serif;
             background-color: #e2dede;
         }
+        
         .navbar {
             height: 60px;
             width: 100%;
@@ -23,95 +24,113 @@
             padding: 0 15px;
             box-sizing: border-box;
         }
+        
         .navbar img {
             height: 50px;
             cursor: pointer;
         }
+        
         .menu {
             color: white;
             cursor: pointer;
             margin-left: 20px;
         }
+        
         .search-container {
             display: flex;
             margin: 0 50px;
             flex-grow: 1;
         }
+        
         .search-container input {
             padding: 10px;
             width: 100%;
             border: none;
             outline: none;
         }
+        
         .search-container button {
             padding: 10px 15px;
             background-color: #febd69;
             border: none;
             cursor: pointer;
         }
+        
         .navbar-links {
             display: flex;
             align-items: center;
         }
+        
         .navbar-links a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
         }
+        
         .item-categories {
             background-color: #232f3e;
             padding: 10px;
             display: flex;
             justify-content: start;
         }
+        
         .item-categories a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
         }
+        
         .move {
             background-color: white;
             padding: 40px 0;
             overflow: hidden;
         }
+        
         .move img {
             height: 200px;
             margin-right: 20px;
         }
+        
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
         }
+        
         .main {
             background-color: #fff;
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 20px;
             width: calc(25% - 20px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        
         .section h2 {
             font-size: 18px;
             margin-bottom: 10px;
         }
+        
         .images {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
         }
+        
         .images img {
             width: 100%;
             height: auto;
         }
+        
         .images a {
             text-decoration: none;
             color: #111;
         }
+        
         .read-more {
             display: inline-block;
-            background-color: #f3d590; 
+            background-color: #f3d590;
             color: #111;
             padding: 5px 10px;
             text-decoration: none;
@@ -119,9 +138,11 @@
             font-size: 13px;
             margin-top: 5px;
         }
+        
         .read-more:hover {
             background-color: #ddb347;
         }
+        
         .nextypeofimage {
             display: flex;
             flex-wrap: wrap;
@@ -130,31 +151,37 @@
             width: 70%;
             padding: 20px;
         }
+        
         #nextypeofimage .main {
             background-color: #fff;
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 20px;
             width: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        
         .nextypeofimage .section h2 {
             font-size: 18px;
             margin-bottom: 10px;
         }
+        
         .nextypeofimage .images {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
         }
+        
         .nextypeofimage .images img {
             width: 100%;
             height: 100px;
         }
+        
         .nextypeofimage .images a {
             text-decoration: none;
             color: rgb(21, 30, 110);
         }
+        
         #bookimage {
             background-color: #fff;
             border-radius: 6px;
@@ -162,98 +189,118 @@
             margin-bottom: 20px;
             width: calc(100% - 40px);
         }
+        
         #bookimage .images {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 10px;
         }
+        
         #bookimage img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             transition: transform 0.3s ease-in-out;
         }
+        
         #bookimage img:hover {
-            transform: scale(1.05); 
+            transform: scale(1.05);
         }
+        
         @media (max-width: 1200px) {
             .main {
                 width: calc(33.33% - 20px);
             }
         }
+        
         @media (max-width: 900px) {
             .main {
                 width: calc(50% - 20px);
             }
         }
+        
         @media (max-width: 600px) {
             .main {
                 width: 100%;
             }
         }
-        
         /* Footer Styles */
+        
         footer {
             background-color: #232f3e;
             color: #fff;
             font-family: Arial, sans-serif;
         }
+        
         .footer-top {
             background-color: #37475a;
             text-align: center;
             padding: 15px 0;
         }
+        
         .footer-top a {
             color: #fff;
             text-decoration: none;
         }
+        
         .footer-content {
             display: flex;
             justify-content: space-around;
             padding: 30px 0;
         }
+        
         .footer-column {
             width: 20%;
         }
+        
         .footer-column h3 {
             font-size: 16px;
             margin-bottom: 15px;
         }
+        
         .footer-column ul {
             list-style-type: none;
             padding: 0;
         }
+        
         .footer-column ul li {
             margin-bottom: 10px;
         }
+        
         .footer-column ul li a {
             color: #ddd;
             text-decoration: none;
             font-size: 14px;
         }
+        
         .footer-column ul li a:hover {
             text-decoration: underline;
         }
+        
         .footer-bottom {
             background-color: #131a22;
             padding: 30px 0;
             text-align: center;
         }
+        
         .footer-logo img {
             width: 100px;
             margin-bottom: 10px;
         }
+        
         .footer-links a {
             color: #ddd;
             text-decoration: none;
             margin: 0 10px;
             font-size: 12px;
         }
+        
         .footer-copyright {
             color: #999;
             font-size: 12px;
             margin-top: 10px;
         }
+        
         @media (max-width: 768px) {
             .footer-content {
                 flex-direction: column;
@@ -269,7 +316,7 @@
 
 <body>
     <nav class="navbar">
-<img src="amazon-removebg-preview.png" alt="net is slow">
+        <img src="amazon-removebg-preview.png" alt="net is slow">
         <div class="menu">
             <i class="ri-map-pin-line"></i> Deliver to Nepal
         </div>
@@ -323,7 +370,8 @@
                         <a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&pd_rd_w=GcRK4&pd_rd_wg=nfk9W&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&ref=pd_hp_d_atf_unk">Chair</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -348,7 +396,8 @@
                         <a href="https://www.amazon.com/s?k=Shoes&rh=p_36%3A-5000&_encoding=UTF8&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&crid=1QEZIUFPCL3YZ&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=3cUKe&pd_rd_wg=mfPyn&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=FMZ7445VWMQ9S232Y05N&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=pd_hp_d_atf_unk">shoes</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -373,7 +422,8 @@
                         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&crid=2036DM6EKNYNA&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=RMnKC&pd_rd_wg=mfPyn&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=FMZ7445VWMQ9S232Y05N&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk">beauty</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -405,7 +455,8 @@
                         <a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&pd_rd_w=GcRK4&pd_rd_wg=nfk9W&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&ref=pd_hp_d_atf_unk">Chair</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -430,7 +481,8 @@
                         <a href="https://www.amazon.com/s?k=Shoes&rh=p_36%3A-5000&_encoding=UTF8&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&crid=1QEZIUFPCL3YZ&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=3cUKe&pd_rd_wg=mfPyn&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=FMZ7445VWMQ9S232Y05N&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=pd_hp_d_atf_unk">shoes</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -455,7 +507,8 @@
                         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&crid=2036DM6EKNYNA&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=RMnKC&pd_rd_wg=mfPyn&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=FMZ7445VWMQ9S232Y05N&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk">beauty</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -487,7 +540,8 @@
                         <a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&pd_rd_w=GcRK4&pd_rd_wg=nfk9W&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&ref=pd_hp_d_atf_unk">Chair</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -512,7 +566,8 @@
                         <a href="https://www.amazon.com/s?k=Shoes&rh=p_36%3A-5000&_encoding=UTF8&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&crid=1QEZIUFPCL3YZ&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=3cUKe&pd_rd_wg=mfPyn&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=FMZ7445VWMQ9S232Y05N&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=pd_hp_d_atf_unk">shoes</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -537,7 +592,8 @@
                         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&crid=2036DM6EKNYNA&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=RMnKC&pd_rd_wg=mfPyn&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=FMZ7445VWMQ9S232Y05N&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk">beauty</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -572,7 +628,8 @@
                         <a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&pd_rd_w=GcRK4&pd_rd_wg=nfk9W&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&ref=pd_hp_d_atf_unk">Chair</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -597,7 +654,8 @@
                         <a href="https://www.amazon.com/s?k=Shoes&rh=p_36%3A-5000&_encoding=UTF8&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&crid=1QEZIUFPCL3YZ&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=3cUKe&pd_rd_wg=mfPyn&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=FMZ7445VWMQ9S232Y05N&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=pd_hp_d_atf_unk">shoes</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -622,7 +680,8 @@
                         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&crid=2036DM6EKNYNA&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=RMnKC&pd_rd_wg=mfPyn&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=FMZ7445VWMQ9S232Y05N&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk">beauty</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -656,7 +715,8 @@
                         <a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&pd_rd_w=GcRK4&pd_rd_wg=nfk9W&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&ref=pd_hp_d_atf_unk">Chair</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -681,7 +741,8 @@
                         <a href="https://www.amazon.com/s?k=Shoes&rh=p_36%3A-5000&_encoding=UTF8&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&crid=1QEZIUFPCL3YZ&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=3cUKe&pd_rd_wg=mfPyn&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=FMZ7445VWMQ9S232Y05N&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=pd_hp_d_atf_unk">shoes</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -706,7 +767,8 @@
                         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&crid=2036DM6EKNYNA&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=RMnKC&pd_rd_wg=mfPyn&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=FMZ7445VWMQ9S232Y05N&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk">beauty</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -738,7 +800,8 @@
                         <a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&pd_rd_w=GcRK4&pd_rd_wg=nfk9W&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&ref=pd_hp_d_atf_unk">Chair</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -763,7 +826,8 @@
                         <a href="https://www.amazon.com/s?k=Shoes&rh=p_36%3A-5000&_encoding=UTF8&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&crid=1QEZIUFPCL3YZ&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=3cUKe&pd_rd_wg=mfPyn&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=FMZ7445VWMQ9S232Y05N&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=pd_hp_d_atf_unk">shoes</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -788,7 +852,8 @@
                         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&crid=2036DM6EKNYNA&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=RMnKC&pd_rd_wg=mfPyn&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=FMZ7445VWMQ9S232Y05N&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk">beauty</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -860,7 +925,8 @@
                         <a href="https://www.amazon.com/s?k=gaming+chairs&_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&pd_rd_w=GcRK4&pd_rd_wg=nfk9W&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&ref=pd_hp_d_atf_unk">Chair</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -885,7 +951,8 @@
                         <a href="https://www.amazon.com/s?k=Shoes&rh=p_36%3A-5000&_encoding=UTF8&content-id=amzn1.sym.56e14e61-447a-443b-9528-4b285fddeeac&crid=1QEZIUFPCL3YZ&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=3cUKe&pd_rd_wg=mfPyn&pf_rd_p=56e14e61-447a-443b-9528-4b285fddeeac&pf_rd_r=FMZ7445VWMQ9S232Y05N&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=pd_hp_d_atf_unk">shoes</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -910,7 +977,8 @@
                         <a href="https://www.amazon.com/s?k=health+and+beauty&i=beauty-intl-ship&_encoding=UTF8&content-id=amzn1.sym.5a1e43ac-8800-488a-812b-a43cf4218174&crid=2036DM6EKNYNA&pd_rd_r=c1073cca-7a87-4894-bd9f-bf09c3998663&pd_rd_w=RMnKC&pd_rd_wg=mfPyn&pf_rd_p=5a1e43ac-8800-488a-812b-a43cf4218174&pf_rd_r=FMZ7445VWMQ9S232Y05N&sprefix=health+and+beauty%2Cbeauty-intl-ship%2C173&ref=pd_hp_d_atf_unk">beauty</a>
                     </div>
                 </div>
-                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk" class="read-more">See more</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=23508887011&pd_rd_w=GcRK4&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=WE3SPW0FPGXGY9WDNHXM&pd_rd_wg=nfk9W&pd_rd_r=b0acf236-fed6-4dba-854a-f924affa95ed&ref_=pd_hp_d_atf_unk"
+                    class="read-more">See more</a>
             </div>
         </div>
 
@@ -1014,7 +1082,7 @@
         </div>
         <div class="footer-bottom">
             <div class="footer-logo">
-<img src="amazon-removebg-preview.png" alt="amazon logo">
+                <img src="amazon-removebg-preview.png" alt="amazon logo">
             </div>
             <div class="footer-links">
                 <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088">Conditions of Use</a>
@@ -1022,8 +1090,10 @@
                 <a href="https://www.amazon.com/interestbasedads/ref=footer_iba">Interest-Based Ads</a>
             </div>
             <div class="footer-copyright">
-                Design by : <a href="portfolio.html" class="text-blue-500">Bibek Ghimire</a>  </div>
+                Design by :
+                <a href="index.html " class="text-blue-500 ">Bibek Ghimire</a> </div>
         </div>
     </footer>
 </body>
+
 </html>
