@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibek Ghimire</title>
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-clipart/20200709/original/pngtree-b-logo-png-image_3604523.jpg" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .glow-image {
+            box-shadow: 0 0 60px rgba(255, 255, 255, 0.15);
+        }
+        
+        nav a {
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        
+        nav a:hover {
+            transform: translateY(-2px);
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-black px-6 py-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <nav class="hidden md:flex space-x-6 text-sm uppercase tracking-wide ml-auto">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 items-center gap-16">
+            <div data-aos="fade-right">
+                <h1 class="text-5xl font-extrabold mb-4 leading-tight">Hi, I’m <span class="text-white">Bibek Ghimire</span></h1>
+                <p class="text-lg mb-6 text-white">Creative Developer | UI/UX Designer</p>
+                <div class="space-x-4">
+                    <a href="#projects" class="inline-block px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">See My Work</a>
+                    <a href="Bibek_Ghimire_Resume.pdf" download class="inline-block px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">Download Resume</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center" data-aos="fade-left">
+                <img loading="lazy" src="me-removebg-preview.png" alt="Bibek Ghimire" class="w-[320px] md:w-[400px] lg:w-[500px] rounded-full shadow-[0_0_60px_rgba(255,255,255,0.2)]" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="px-6 py-24 text-center border-t border-white/10" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-6">About Me</h2>
+        <p class="max-w-2xl mx-auto text-gray-300 leading-relaxed">
+            I'm a passionate web developer skilled in HTML, CSS, Tailwind CSS, JavaScript, and Python. I love building responsive, user-friendly websites with clean design and smart functionality.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="px-6 py-24 text-center border-t border-white/10" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-10">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-white">
+            <div class="p-3 border border-white/20 rounded-lg hover:scale-105 transform transition">HTML</div>
+            <div class="p-3 border border-white/20 rounded-lg hover:scale-105 transform transition">CSS</div>
+            <div class="p-3 border border-white/20 rounded-lg hover:scale-105 transform transition">Tailwind CSS</div>
+            <div class="p-3 border border-white/20 rounded-lg hover:scale-105 transform transition">JavaScript</div>
+            <div class="p-3 border border-white/20 rounded-lg hover:scale-105 transform transition">Git</div>
+            <div class="p-3 border border-white/20 rounded-lg hover:scale-105 transform transition">UI/UX</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="px-8 py-24 bg-black text-white" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-10 text-white">Featured Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Apple -->
+                <a href="Apple1.html" class="project-card">
+                    <img loading="lazy" src="https://wallpapercave.com/wp/Be076f5.jpg" alt="Apple Clone">
+                    <h4>Apple Clone</h4>
+                    <p>A beautifully designed Apple-themed UI.</p>
+                </a>
+
+                <!-- Amazon -->
+                <a href="amozon3.html" class="project-card">
+                    <img loading="lazy" src="https://th.bing.com/th/id/OIP.kaXXjkGSpi9kFJYtYsWRqAHaGL?rs=1&pid=ImgDetMain" alt="Amazon Clone">
+                    <h4>Amazon Clone</h4>
+                    <p>A responsive Amazon clone with product layout.</p>
+                </a>
+
+                <!-- Flipkart -->
+                <a href="flipkart.html" class="project-card">
+                    <img loading="lazy" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202210/flipkart_0-sixteen_nine.jpg" alt="Flipkart">
+                    <h4>Flipkart UI</h4>
+                    <p>Replicates Flipkart's layout and functionality.</p>
+                </a>
+
+                <!-- Furniture -->
+                <a href="Furni.html" class="project-card">
+                    <img loading="lazy" src="https://www.mainstreetsm.com/wp-content/uploads/2016/02/Icon-Sofa-Black.gif" alt="Furniture">
+                    <h4>Furniture Shop</h4>
+                    <p>Modern aesthetic furniture e-commerce site.</p>
+                </a>
+
+                <!-- Shoes -->
+                <a href="shoes.html" class="project-card">
+                    <img loading="lazy" src="https://th.bing.com/th/id/OIP.gZU8y3d29kYYHi7ZKKL19QAAAA?w=297&h=280&rs=1&pid=ImgDetMain" alt="Shoes">
+                    <h4>Shoes Store</h4>
+                    <p>Responsive shoe store template with clean UI.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-24 text-center border-t border-white/10 relative" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+        <form id="contactForm" class="max-w-xl mx-auto space-y-6">
+            <input type="text" placeholder="Your Name" class="form-input" required />
+            <input type="email" placeholder="Your Email" class="form-input" required />
+            <textarea placeholder="Your Message" rows="5" class="form-input" required></textarea>
+            <button type="submit" class="px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">Send Message</button>
+        </form>
+
+        <div id="toast" class="hidden fixed top-6 left-1/2 transform -translate-x-1/2 bg-white text-black px-6 py-3 rounded-lg shadow-lg text-sm font-semibold transition-all duration-300 z-50">
+            ✅ Message Sent Successfully!
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center border-t border-white/10 text-gray-500 text-sm">
+        <div class="flex justify-center gap-6 mb-4 text-xl">
+            <a href="https://www.facebook.com/chhetri.bibek.37?rdid=yaDpvFR9jbdtOgXb&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Dy7zqHC2B%2F#" target="_blank" class="text-2xl hover:text-blue-600">
+                <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bibek-ghimire-562b8b282/" target="_blank" class="text-2xl hover:text-blue-400">
+                <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a href="mailto:bibekghimire2269@gmail.com" class="text-2xl hover:text-red-500">
+                <i class="ri-mail-fill"></i>
+            </a>
+        </div>
+        &copy; 2025 Bibek Ghimire — Crafted with clarity.
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const form = document.getElementById('contactForm');
+        const toast = document.getElementById('toast');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            form.reset();
+            toast.classList.remove('hidden');
+            toast.classList.add('opacity-100');
+            setTimeout(() => toast.classList.add('opacity-0'), 2500);
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('opacity-100', 'opacity-0');
+            }, 3000);
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <style>
+        .form-input {
+            width: 100%;
+            background-color: black;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            color: white;
+            placeholder-color: gray;
+        }
+        
+        .project-card {
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-0.5rem);
+            background: #1a1a1a;
+        }
+        
+        .project-card img {
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            height: 160px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .project-card h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .project-card p {
+            font-size: 0.875rem;
+            color: #ccc;
+        }
+    </style>
+
+</body>
+
+</html>
