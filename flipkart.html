@@ -11,75 +11,121 @@
 </head>
 
 <body class="bg-gray-100">
-
-    <!-- Navbar -->
-    <nav class="bg-white shadow px-6 py-3">
-        <div class="flex flex-wrap items-center justify-between">
+    <!-- Responsive Navbar -->
+    <nav class="bg-white shadow px-4 sm:px-6 py-3">
+        <div class="flex items-center justify-between flex-wrap">
             <!-- Logo -->
-            <div class="flex items-center space-x-4">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="Flipkart Logo" class="h-10">
+            <div class="flex items-center space-x-2">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="Flipkart Logo" class="h-8 sm:h-10">
             </div>
 
-            <!-- Search Bar -->
-            <div class="flex-1 mx-4 max-w-xl">
-                <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
-                    <i class="ri-search-line text-gray-500 mr-2"></i>
-                    <input type="text" placeholder="Search for products, brands and more" class="bg-transparent outline-none w-full">
-                </div>
+            <!-- Hamburger Icon (Mobile) -->
+            <div class="block lg:hidden">
+                <button id="navToggle" class="text-gray-600 focus:outline-none text-2xl">
+                ☰
+            </button>
             </div>
 
-            <!-- Menu Items -->
-            <div class="flex items-center space-x-6 text-gray-700 text-sm font-medium">
-                <div class="flex items-center space-x-1 hover:text-blue-600 cursor-pointer">
-                    <i class="ri-account-circle-line text-lg"></i>
-                    <span>Login</span>
+            <!-- Menu & Search -->
+            <div id="navMenu" class="w-full lg:flex lg:items-center lg:space-x-6 mt-3 lg:mt-0 hidden lg:w-auto">
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-xl mx-auto lg:mx-4 w-full px-2 lg:px-0">
+                    <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+                        <i class="ri-search-line text-gray-500 mr-2"></i>
+                        <input type="text" placeholder="Search for products, brands and more" class="bg-transparent outline-none w-full text-sm">
+                    </div>
                 </div>
 
-                <div class="flex items-center space-x-1 hover:text-blue-600 cursor-pointer">
-                    <i class="ri-shopping-cart-line text-lg"></i>
-                    <span>Cart</span>
-                </div>
+                <!-- Menu Items -->
+                <div class="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 text-gray-700 text-sm font-medium mt-4 lg:mt-0">
+                    <div class="flex items-center space-x-1 hover:text-blue-600 cursor-pointer">
+                        <i class="ri-account-circle-line text-lg"></i>
+                        <span>Login</span>
+                    </div>
 
-                <div class="flex items-center space-x-1 hover:text-blue-600 cursor-pointer">
-                    <i class="ri-store-2-line text-lg"></i>
-                    <span>Become a Seller</span>
-                </div>
+                    <div class="flex items-center space-x-1 hover:text-blue-600 cursor-pointer">
+                        <i class="ri-shopping-cart-line text-lg"></i>
+                        <span>Cart</span>
+                    </div>
 
-                <!-- Dropdown -->
-                <div class="relative group">
-                    <button class="flex items-center space-x-1 hover:text-blue-600">
+                    <div class="flex items-center space-x-1 hover:text-blue-600 cursor-pointer">
+                        <i class="ri-store-2-line text-lg"></i>
+                        <span>Become a Seller</span>
+                    </div>
+
+                    <!-- Dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center space-x-1 hover:text-blue-600">
                         <i class="ri-arrow-down-double-fill text-lg"></i>
                     </button>
-                    <div class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
-                        <ul class="text-sm text-gray-700">
-                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">🔔 Notification Preferences</li>
-                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">🎧 24x7 Customer Care</li>
-                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">📢 Advertise</li>
-                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">⬇️ Download App</li>
-                        </ul>
+                        <div class="absolute right-0 mt-2 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-10">
+                            <ul class="text-sm text-gray-700">
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">🔔 Notification Preferences</li>
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">🎧 24x7 Customer Care</li>
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">📢 Advertise</li>
+                                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">⬇️ Download App</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Toggle Script -->
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 
 
-    <!-- nav ko talako -->
+    <!-- Category Nav -->
     <div class="bg-pink-100">
-        <ul class="flex justify-center space-x-10 bg-white shadow-md py-2 mt-2">
-            <li> <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt=""> Kilos</li>
-            <li><img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt=""> Mobiles</li>
-            <li><img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt=""> Fashion</li>
-            <li> <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="">Electronics</li>
-            <li> <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="">Home & Furniture</li>
-            <li> <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" alt="">Appliances</li>
-            <li> <img src="https://rukminim1.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" alt="">Flight Booking</li>
-            <li> <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="">Beauty, Toys & More</li>
-            <li><img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="">Two Wheelers</li>
-        </ul>
+        <div class="overflow-x-auto">
+            <ul class="flex lg:justify-center space-x-6 lg:space-x-10 bg-white shadow-md py-3 px-4 text-center text-sm whitespace-nowrap">
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="" class="h-12 w-12">
+                    <span>Kilos</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="" class="h-12 w-12">
+                    <span>Mobiles</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="" class="h-12 w-12">
+                    <span>Fashion</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="" class="h-12 w-12">
+                    <span>Electronics</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="" class="h-12 w-12">
+                    <span>Home & Furniture</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" alt="" class="h-12 w-12">
+                    <span>Appliances</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" alt="" class="h-12 w-12">
+                    <span>Flight Booking</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="" class="h-12 w-12">
+                    <span>Beauty, Toys & More</span>
+                </li>
+                <li class="flex flex-col items-center min-w-[80px]">
+                    <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="" class="h-12 w-12">
+                    <span>Two Wheelers</span>
+                </li>
+            </ul>
+        </div>
     </div>
+
 
 
     <!-- moving image -->
@@ -98,61 +144,73 @@
 
 
 
-
     <!-- top offer -->
     <div class="bg-white shadow-md py-2 mt-2">
-        <p class="text-5xl font-bold">Top offers!</p>
-        <ul class="flex space-x-20 justify-center mt-4">
-            <li><img class="h-36 w-25" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="">Jeans, Trousers......
+        <p class="text-5xl font-bold ">Top offers!</p>
+        <ul class="flex justify-center space-x-10 mt-4 flex-wrap">
+            <li class="flex flex-col items-center">
+                <img class="h-36 w-auto" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="Jeans, Trousers">
+                <p>Jeans, Trousers......</p>
                 <p class="text-black font-bold"><a href="https://www.flipkart.com/clothing-and-accessories/bottomwear/pr?sid=clo%2Cvua&p%5B%5D=facets.discount_range_v1%255B%255D%3D50%2525%2Bor%2Bmore&p%5B%5D=facets.ideal_for%255B%255D%3DWomen&hpid=5yT2qjRm2KQYWQZpvfdfAKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyI1MC04MCUgT2ZmIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiVFJPSDQ5WTlaQkIyRkIyQSIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkplYW5zLCBUcm91c2Vycy4uLiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D">50-80% off</a></p>
             </li>
-            <li><img class="h-36 w-25" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="">Jeans, Trousers......
+            <li class="flex flex-col items-center">
+                <img class="h-36 w-auto" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="Jeans, Trousers">
+                <p>Jeans, Trousers......</p>
                 <p class="text-black font-bold">50-80% off</p>
             </li>
-            <li><img class="h-36 w-25" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="">Jeans, Trousers......
+            <li class="flex flex-col items-center">
+                <img class="h-36 w-auto" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="Jeans, Trousers">
+                <p>Jeans, Trousers......</p>
                 <p class="text-black font-bold">50-80% off</p>
             </li>
-            <li><img class="h-36 w-25" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="">Jeans, Trousers......
+            <li class="flex flex-col items-center">
+                <img class="h-36 w-auto" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="Jeans, Trousers">
+                <p>Jeans, Trousers......</p>
                 <p class="text-black font-bold">50-80% off</p>
             </li>
-            <li><img class="h-36 w-25" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="">Jeans, Trousers......
+            <li class="flex flex-col items-center">
+                <img class="h-36 w-auto" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="Jeans, Trousers">
+                <p>Jeans, Trousers......</p>
                 <p class="text-black font-bold">50-80% off</p>
             </li>
-            <li><img class="h-36 w-25" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="">Jeans, Trousers......
+            <li class="flex flex-col items-center">
+                <img class="h-36 w-auto" src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/u/j/u/32-kttladiesjeans2915-kotty-original-imah6zjvz3etuw9g.jpeg?q=70" alt="Jeans, Trousers">
+                <p>Jeans, Trousers......</p>
                 <p class="text-black font-bold">50-80% off</p>
             </li>
-
         </ul>
     </div>
 
 
-
-
-    <!-- 499 only -->
+    <!-- 499 -->
     <div class="bg-white shadow-md py-2 mt-2">
         <p class="text-5xl font-bold mt-4">499 only</p>
-        <ul class="flex space-x-20 justify-center mt-4 ">
-            <li class="p-4"> <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
+        <ul class="flex space-x-20 justify-center mt-4 flex-wrap">
+            <li class="p-4">
+                <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
                 <p class="font-semibold mt-2">Rebook HRX</p>
                 <p class="text-black font-bold">70% off</p>
             </li>
-            <li class="p-4"> <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
+            <li class="p-4">
+                <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
                 <p class="font-semibold mt-2">Rebook HRX</p>
                 <p class="text-black font-bold">70% off</p>
             </li>
-            <li class="p-4"> <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
+            <li class="p-4">
+                <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
                 <p class="font-semibold mt-2">Rebook HRX</p>
                 <p class="text-black font-bold">70% off</p>
             </li>
-            <li class="p-4"> <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
+            <li class="p-4">
+                <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
                 <p class="font-semibold mt-2">Rebook HRX</p>
                 <p class="text-black font-bold">70% off</p>
             </li>
-            <li class="p-4"> <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
+            <li class="p-4">
+                <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover">
                 <p class="font-semibold mt-2">Rebook HRX</p>
                 <p class="text-black font-bold">70% off</p>
             </li>
-
         </ul>
     </div>
 
@@ -160,20 +218,8 @@
 
 
 
-    <!-- grid ko  -->
-    <div class="grid grid-cols-1 grid-cols-3 gap-4 px-4 py-4">
-        <div class="bg-white shadow-md p-6 flex space-x-6"><img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover"> <img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp"
-                alt="Rebook HRX" class="w-40 h-40 object-cover"></div>
-        <div class="bg-white shadow-md p-6 flex space-x-6"><img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover"><img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp"
-                alt="Rebook HRX" class="w-40 h-40 object-cover"></div>
-        <div class="bg-white shadow-md p-6 flex space-x-6"><img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp" alt="Rebook HRX" class="w-40 h-40 object-cover"><img src="https://lzd-img-global.slatic.net/g/p/ba34ff0778ef455b1de6ee8fff25a329.jpg_720x720q80.jpg_.webp"
-                alt="Rebook HRX" class="w-40 h-40 object-cover"></div>
-    </div>
 
-
-
-
-
+    <!-- text -->
     <div class="bg-white shadow-md py-2 mt-2">
         <p class="font-bold text-2xl">flipkart</p>
         <p>
@@ -203,15 +249,13 @@
     </div>
 
 
-
     <!-- Footer -->
     <footer class="bg-black shadow-md py-4 mt-4">
-        <div class="container mx-auto flex justify-between px-6">
+        <div class="container mx-auto flex flex-wrap justify-between px-6">
 
-            <div class="text-white">
+            <div class="text-white mb-4">
                 <p>About</p>
                 <ul>
-
                     <li>contact Us</li>
                     <li>About Us</li>
                     <li>Terms of Use</li>
@@ -220,12 +264,9 @@
                     <li>Press</li>
                     <li>Flipkart Stories</li>
                 </ul>
-
             </div>
 
-
-
-            <div class="text-white">
+            <div class="text-white mb-4">
                 <p>Social</p>
                 <ul>
                     <li>Facebook</li>
@@ -236,38 +277,36 @@
                 </ul>
             </div>
 
-            <div class="w-px h-32 bg-gray-400"></div>
+            <div class="w-px h-32 bg-gray-400 mb-4 md:mb-0"></div>
 
-
-            <div class="text-white">
-                <p>help</p>
+            <div class="text-white mb-4">
+                <p>Help</p>
                 <ul>
                     <li>Payments</li>
                     <li>Shipping</li>
                     <li>Cancellation & Returns</li>
                     <li>FAQ</li>
                     <li>Report Infringement</li>
-
+                </ul>
             </div>
 
-
-            <div class="text-white">
-                <p>consumer policy</p>
+            <div class="text-white mb-4">
+                <p>Consumer Policy</p>
                 <ul>
                     <li>Return Policy</li>
                     <li>Terms of Use</li>
                     <li>Security</li>
                     <li>Privacy</li>
                     <li>Grievance Redressal</li>
+                </ul>
             </div>
-
 
         </div>
 
         <hr>
 
-        <div class="container mx-auto text-center flex space-x-6 justify-center text-white">
-            <p>Become a sellers</p>
+        <div class="container mx-auto text-center flex flex-wrap space-x-6 justify-center text-white">
+            <p>Become a seller</p>
             <p>Advertise</p>
             <p>Download App</p>
             <p>Contact Us</p>

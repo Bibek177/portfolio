@@ -7,88 +7,14 @@
     <title>Amozon By Bibek</title>
     <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/sicons/basic-round-social/512/amazon-icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #e2dede;
-        }
-        
-        .navbar {
-            height: 60px;
-            width: 100%;
-            background-color: #131921;
-            display: flex;
-            align-items: center;
-            padding: 0 15px;
-            box-sizing: border-box;
-        }
-        
-        .navbar img {
-            height: 50px;
-            cursor: pointer;
-        }
-        
-        .menu {
-            color: white;
-            cursor: pointer;
-            margin-left: 20px;
-        }
-        
-        .search-container {
-            display: flex;
-            margin: 0 50px;
-            flex-grow: 1;
-        }
-        
-        .search-container input {
-            padding: 10px;
-            width: 100%;
-            border: none;
-            outline: none;
-        }
-        
-        .search-container button {
-            padding: 10px 15px;
-            background-color: #febd69;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .navbar-links {
-            display: flex;
-            align-items: center;
-        }
-        
-        .navbar-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        .item-categories {
-            background-color: #232f3e;
-            padding: 10px;
-            display: flex;
-            justify-content: start;
-        }
-        
-        .item-categories a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        
-        .move {
-            background-color: white;
-            padding: 40px 0;
-            overflow: hidden;
-        }
-        
-        .move img {
-            height: 200px;
-            margin-right: 20px;
         }
         
         .container {
@@ -315,38 +241,71 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <img src="amazon-removebg-preview.png" alt="net is slow">
-        <div class="menu">
-            <i class="ri-map-pin-line"></i> Deliver to Nepal
+    <!-- Responsive Navbar with Tailwind CSS -->
+    <nav class="flex flex-wrap items-center justify-between bg-gray-900 text-white p-4 shadow-md">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <img src="amazon-removebg-preview.png" alt="net is slow" class="h-10 w-auto">
         </div>
-        <div class="search-container">
-            <input type="text" placeholder="Search Amazon">
-            <button><i class="ri-search-line"></i></button>
+
+        <!-- Location -->
+        <div class="hidden md:flex items-center space-x-1 text-sm">
+            <i class="ri-map-pin-line text-lg"></i>
+            <span>Deliver to Nepal</span>
         </div>
-        <div class="navbar-links">
-            <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><i class="ri-home-4-fill"></i> Home & Sign in</a>
-            <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%3F_encoding%3DUTF8%26ref_%3Dnav_orders_first&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_retail_yourorders_us&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Return & Order</a>
-            <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart"><i class="ri-shopping-cart-fill"></i> Cart</a>
+
+        <!-- Search bar -->
+        <div class="flex flex-grow max-w-lg w-full mx-4 mt-2 md:mt-0">
+            <input type="text" placeholder="Search Amazon" class="w-full px-4 py-2 rounded-l-md text-black">
+            <button class="bg-yellow-500 px-4 py-2 rounded-r-md">
+                <i class="ri-search-line text-black text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6 mt-2 md:mt-0 text-sm">
+            <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+                class="hover:text-yellow-400 flex items-center space-x-1">
+                <i class="ri-home-4-fill text-lg"></i><span>Home & Sign in</span>
+            </a>
+            <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%3F_encoding%3DUTF8%26ref_%3Dnav_orders_first&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_retail_yourorders_us&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+                class="hover:text-yellow-400">Return & Order</a>
+            <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" class="hover:text-yellow-400 flex items-center space-x-1">
+                <i class="ri-shopping-cart-fill text-lg"></i><span>Cart</span>
+            </a>
         </div>
     </nav>
 
-    <div class="item-categories">
-        <a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522">Today's Deal</a>
-        <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice">Customer Service</a>
-        <a href="https://www.amazon.com/registries?ref_=nav_cs_registry&ref_=nav_cs_registry">Registry</a>
-        <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc">Gift Cards</a>
-        <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell">Sell</a>
+
+
+    <!-- Moving Image Section -->
+    <div class="overflow-hidden bg-white py-4">
+        <div class="flex animate-marquee space-x-8">
+            <img src="https://th.bing.com/th/id/OIP.ruLBhCmw-Rjs40zT11Gl4QHaD4?rs=1&pid=ImgDetMain" alt="Promo 1" class="h-24 w-auto object-contain">
+            <img src="https://th.bing.com/th/id/OIP.i7ph4oEdZhjaeVZnk_WEBAAAAA?rs=1&pid=ImgDetMain" alt="Promo 2" class="h-24 w-auto object-contain">
+            <img src="https://th.bing.com/th/id/R.4815dd1a7674c7219a51639505608eb4?rik=fujKCoIyQPGxbQ&pid=ImgRaw&r=0" alt="Promo 3" class="h-24 w-auto object-contain">
+            <img src="https://th.bing.com/th/id/R.65a0e4a34092ab3ccb7c3ec8befb57f0?rik=HL3Xub6ijZP6hg&pid=ImgRaw&r=0" alt="Promo 4" class="h-24 w-auto object-contain">
+        </div>
     </div>
 
-    <div class="move">
-        <marquee behavior="scroll" direction="left" scrollamount="10">
-            <img src="https://th.bing.com/th/id/OIP.ruLBhCmw-Rjs40zT11Gl4QHaD4?rs=1&pid=ImgDetMain" alt="Promo 1">
-            <img src="https://th.bing.com/th/id/OIP.i7ph4oEdZhjaeVZnk_WEBAAAAA?rs=1&pid=ImgDetMain" alt="Promo 2">
-            <img src="https://th.bing.com/th/id/R.4815dd1a7674c7219a51639505608eb4?rik=fujKCoIyQPGxbQ&pid=ImgRaw&r=0" alt="Promo 3">
-            <img src="https://th.bing.com/th/id/R.65a0e4a34092ab3ccb7c3ec8befb57f0?rik=HL3Xub6ijZP6hg&pid=ImgRaw&r=0" alt="Promo 4">
-        </marquee>
-    </div>
+    <!-- Add Tailwind Custom Animation (inside a <style> tag) -->
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+            display: flex;
+            white-space: nowrap;
+        }
+    </style>
+
 
     <div class="container">
         <div class="main">

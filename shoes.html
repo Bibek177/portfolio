@@ -15,46 +15,45 @@
 
 
 
-    <!-- navbar -->
+    <!-- Navbar -->
     <div class="bg-white shadow-md h-16 flex items-center px-6">
         <nav class="flex justify-between items-center w-full">
 
-
-            <!-- Left: Icons -->
+            <!-- Left: Social Media Icons -->
             <div class="flex space-x-3 text-2xl">
-                <i class="ri-facebook-fill"></i>
-                <i class="ri-instagram-line"></i>
-                <i class="ri-youtube-fill"></i>
-                <i class="ri-tiktok-fill"></i>
+                <i class="ri-facebook-fill cursor-pointer"></i>
+                <i class="ri-instagram-line cursor-pointer"></i>
+                <i class="ri-youtube-fill cursor-pointer"></i>
+                <i class="ri-tiktok-fill cursor-pointer"></i>
             </div>
 
-            <!-- Center: Text -->
-            <div class="text-center">
-                <ul class="flex space-x-3">
+            <!-- Center: Special Offer Text (Hidden on Small Screens) -->
+            <div class="hidden sm:block text-center">
+                <ul class="flex space-x-3 justify-center">
                     <li class="font-bold">Special Offer:</li>
-                    <li>Free Shipping on all Order about </li>
-
+                    <li>Free Shipping on Orders over</li>
                 </ul>
-                <ul>
-                    <li>$100</li>
+                <ul class="flex justify-center">
+                    <li class="font-semibold text-lg">$100</li>
                 </ul>
             </div>
 
-
-            <!-- Login/Cart here -->
-            <div>
-                <ul class="flex space-x-4">
-                    <li>Contact</li>
-                    <li>Cart</li>
-                    <li>Login</li>
+            <!-- Right: Contact, Cart, Login (Mobile-Friendly) -->
+            <div class="flex space-x-6">
+                <ul class="flex space-x-4 text-lg">
+                    <li><a href="#" class="hover:text-gray-600">Contact</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Cart</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Login</a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    <hr>
+
+    <hr class="border-gray-300">
 
 
-    <!-- nav ko tala  -->
+
+    <!-- Navbar -->
     <div class="bg-white shadow-md shadow-outline h-24 flex items-center justify-between px-10">
 
         <!-- 1st: Logo -->
@@ -62,8 +61,8 @@
             <img src="https://themewagon.github.io/stylish/images/main-logo.png" alt="" class="h-10">
         </div>
 
-        <!-- 2nd: Menu -->
-        <ul class="flex space-x-10 text-lg font-bold">
+        <!-- 2nd: Menu (Hidden on Small Screens) -->
+        <ul class="hidden md:flex space-x-10 text-lg font-bold">
             <li>Home</li>
             <li>Men</li>
             <li>Women</li>
@@ -72,14 +71,78 @@
             <li>Sale</li>
         </ul>
 
-        <!-- 3rd: Icons -->
-        <ul class="flex space-x-5 text-2xl">
+        <!-- 3rd: Icons (Hidden on Small Screens) -->
+        <ul class="hidden md:flex space-x-5 text-2xl">
             <li><i class="ri-user-3-line"></i></li>
             <li><i class="ri-shopping-cart-line"></i></li>
             <li><i class="ri-search-line"></i></li>
         </ul>
 
+        <!-- Hamburger Menu (Visible on Mobile) -->
+        <button class="md:hidden text-2xl">
+        <i class="ri-menu-3-line cursor-pointer"></i>
+    </button>
+
     </div>
+
+    <!-- Optional: Mobile Menu -->
+    <div class="md:hidden flex flex-col items-center py-4 bg-white shadow-md hidden" id="mobile-menu">
+        <ul class="space-y-4 text-lg font-bold">
+            <li>Home</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Page</li>
+            <li>Shop</li>
+            <li>Sale</li>
+        </ul>
+        <div class="flex space-x-5 text-2xl py-4">
+            <li><i class="ri-user-3-line"></i></li>
+            <li><i class="ri-shopping-cart-line"></i></li>
+            <li> <i class="ri-search-line"></i></li>
+        </div>
+    </div>
+
+
+    <!-- 3rd: Icons (Hidden on Small Screens) -->
+    <ul class="hidden md:flex space-x-5 text-2xl">
+        <li><i class="ri-user-3-line"></i></li>
+        <li><i class="ri-shopping-cart-line"></i></li>
+        <li><i class="ri-search-line"></i></li>
+    </ul>
+
+    <!-- Hamburger Menu (Visible on Mobile) -->
+    <button class="md:hidden text-2xl" id="hamburger-btn">
+        <i class="ri-menu-3-line cursor-pointer"></i>
+    </button>
+
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="md:hidden hidden" id="mobile-menu">
+        <ul class="flex flex-col items-center space-y-4 py-4 bg-white shadow-md text-lg font-bold">
+            <li>Home</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Page</li>
+            <li>Shop</li>
+            <li>Sale</li>
+        </ul>
+        <div class="flex space-x-5 justify-center py-4 text-2xl">
+            <li><i class="ri-user-3-line"></i></li>
+            <li><i class="ri-shopping-cart-line"></i></li>
+            <li><i class="ri-search-line"></i></li>
+        </div>
+    </div>
+
+    <!-- JavaScript to Toggle Mobile Menu -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 
 
@@ -100,73 +163,84 @@
 
 
     <hr>
-
-    <!-- 10 % -->
-    <div class="bg-gray-100 shadow-md h-48 mt-7 ml-7 mr-7 rounded-md flex items-center justify-between px-10">
+    <!-- 10 % OFF Section -->
+    <div class="bg-gray-100 shadow-md h-48 mt-7 mx-7 rounded-md flex flex-col md:flex-row items-center justify-between px-10 py-4">
         <!-- Text Section -->
-        <ul>
-            <li class="text-4xl font-bold">10% OFF Discount</li>
-            <li class="text-4xl font-bold">Coupons</li>
-            <li class="text-blue-600">Subscribe us to get 10% OFF on all the purchases</li>
+        <ul class="text-center md:text-left">
+            <li class="text-2xl md:text-4xl font-bold">10% OFF Discount</li>
+            <li class="text-2xl md:text-4xl font-bold">Coupons</li>
+            <li class="text-blue-600 text-sm md:text-base">Subscribe to us to get 10% OFF on all the purchases</li>
         </ul>
 
         <!-- Button Section -->
-        <button class="bg-black px-5 py-2 rounded text-white">EMAIL ME</button>
+        <button class="bg-black px-5 py-2 mt-4 md:mt-0 rounded text-white">EMAIL ME</button>
     </div>
+
 
 
 
     <hr>
-
-    <!-- feature  -->
+    <!-- Featured Products -->
     <div class="bg-white h-32">
-        <ul class="flex justify-between items-center px-6 h-full">
-            <li class="text-4xl font-bold">FEATURED PRODUCTS</li>
-            <li class="text-blue-500 cursor-pointer">VIEW ALL</li>
+        <ul class="flex flex-col md:flex-row justify-between items-center px-6 h-full">
+            <li class="text-3xl md:text-4xl font-bold text-center md:text-left">FEATURED PRODUCTS</li>
+            <li class="text-blue-500 cursor-pointer text-center md:text-left">VIEW ALL</li>
         </ul>
     </div>
 
 
 
 
-    <!-- 5 img  -->
-
-    <div class="bg-white h-56 flex justify-between items-center px-6 h-full">
-
-        <ul class="flex justify-between items-center h-full gap-3">
-            <li> <img src="https://themewagon.github.io/stylish/images/card-item1.jpg" alt="">
+    <!-- 5 Images - Responsive, Same Size -->
+    <div class="bg-white py-6 px-4 overflow-x-auto">
+        <ul class="flex gap-6 w-max">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item1.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item2.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item2.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item3.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item3.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item4.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item4.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item5.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item5.jpg" alt="">
+                <p class="font-bold">Running shoes for men $99</p>
+            </li>
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item2.jpg" alt="">
+                <p class="font-bold">Running shoes for men $99</p>
+            </li>
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item4.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
         </ul>
+    </div>
 
     </div>
+
 
     <!-- white space  -->
     <div class="h-32 bg-white">
 
     </div>
 
-
-    <!-- 2 pic  -->
-    <div class="bg-white h-96">
-        <ul class="grid grid-cols-2 gap-4 px-6 h-full">
-            <li class="rounded-lg overflow-hidden">
-                <img class="h-full w-full object-cover" src="https://themewagon.github.io/stylish/images/collection-item1.jpg" alt="">
+    <!-- 2 pic - Responsive -->
+    <div class="bg-white">
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-6">
+            <li class="rounded-lg overflow-hidden h-64 md:h-96">
+                <img class="w-full h-full object-cover" src="https://themewagon.github.io/stylish/images/collection-item1.jpg" alt="">
             </li>
-            <li class="rounded-lg overflow-hidden">
-                <img class="h-full w-full object-cover" src="https://themewagon.github.io/stylish/images/collection-item2.jpg" alt="">
+            <li class="rounded-lg overflow-hidden h-64 md:h-96">
+                <img class="w-full h-full object-cover" src="https://themewagon.github.io/stylish/images/collection-item2.jpg" alt="">
             </li>
         </ul>
     </div>
@@ -174,50 +248,63 @@
 
 
 
-    <!-- feature  -->
+
+    <!-- Featured Products -->
     <div class="bg-white h-32">
-        <ul class="flex justify-between items-center px-6 h-full">
-            <li class="text-4xl font-bold">FEATURED PRODUCTS</li>
-            <li class="text-blue-500 cursor-pointer">VIEW ALL</li>
+        <ul class="flex flex-col md:flex-row justify-between items-center px-6 h-full">
+            <li class="text-3xl md:text-4xl font-bold text-center md:text-left">FEATURED PRODUCTS</li>
+            <li class="text-blue-500 cursor-pointer text-center md:text-left">VIEW ALL</li>
         </ul>
     </div>
 
 
 
 
-    <!-- 5 img  -->
-
-    <div class="bg-white h-56 flex justify-between items-center px-6 h-full">
-
-        <ul class="flex justify-between items-center h-full gap-3">
-            <li> <img src="https://themewagon.github.io/stylish/images/card-item1.jpg" alt="">
+    <!-- 5 Images - Responsive, Same Size -->
+    <div class="bg-white py-6 px-4 overflow-x-auto">
+        <ul class="flex gap-6 w-max">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item1.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item2.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item2.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item3.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item3.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item4.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item4.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
-            <li><img src="https://themewagon.github.io/stylish/images/card-item5.jpg" alt="">
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item5.jpg" alt="">
+                <p class="font-bold">Running shoes for men $99</p>
+            </li>
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item2.jpg" alt="">
+                <p class="font-bold">Running shoes for men $99</p>
+            </li>
+            <li class="w-48 shrink-0">
+                <img src="https://themewagon.github.io/stylish/images/card-item4.jpg" alt="">
                 <p class="font-bold">Running shoes for men $99</p>
             </li>
         </ul>
+    </div>
 
     </div>
+
 
     <!-- white space  -->
     <div class="h-32 bg-white">
 
     </div>
     <hr>
-    <!-- Footer -->
-    <footer class="bg-gray-200 p-6">
-        <div class="flex justify-between space-x-6">
-            <!-- Each div represents a column of items in the footer -->
+    <footer class=" p-6">
+        <!-- Responsive grid: 2 cols on small, up to 4+ on large -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">
             <div>
                 <ul>
                     <li>info</li>
@@ -244,18 +331,6 @@
                 </ul>
             </div>
 
-            <div>
-                <ul>
-                    <li>info</li>
-                    <li>about us</li>
-                    <li>contact us</li>
-                    <li>privacy policy</li>
-                    <li>terms of use</li>
-                    <li>shipping</li>
-                    <li>return</li>
-                    <li>payment</li>
-                </ul>
-            </div>
 
             <div>
                 <ul>
@@ -270,18 +345,7 @@
                 </ul>
             </div>
 
-            <div>
-                <ul>
-                    <li>info</li>
-                    <li>about us</li>
-                    <li>contact us</li>
-                    <li>privacy policy</li>
-                    <li>terms of use</li>
-                    <li>shipping</li>
-                    <li>return</li>
-                    <li>payment</li>
-                </ul>
-            </div>
+
 
             <div>
                 <ul>
@@ -295,6 +359,34 @@
                     <li>payment</li>
                 </ul>
             </div>
+
+
+
+            <div>
+                <ul>
+                    <li>info</li>
+                    <li>about us</li>
+                    <li>contact us</li>
+                    <li>privacy policy</li>
+                    <li>terms of use</li>
+                    <li>shipping</li>
+                    <li>return</li>
+                    <li>payment</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>info</li>
+                    <li>about us</li>
+                    <li>contact us</li>
+                    <li>privacy policy</li>
+                    <li>terms of use</li>
+                    <li>shipping</li>
+                    <li>return</li>
+                    <li>payment</li>
+                </ul>
+            </div>
+
 
             <div>
                 <ul>
@@ -310,25 +402,14 @@
             </div>
         </div>
 
-
-
-
-
-        <div class="bg-blue-100 h-32">
-            <ul class="flex justify-between items-center px-6 h-full">
-                <li> Design by : <a href="index.html" class="text-blue-500">Bibek Ghimire</a> </li>
-                <li class="text-blue-500 cursor-pointer">Free HTML by TemplatesJungle</li>
+        <!-- Bottom section -->
+        <div class=" mt-6 py-4">
+            <ul class="flex flex-col md:flex-row justify-between items-center px-6 gap-2 md:gap-0">
+                <li>Design by: <a href="index.html" class="text-blue-500">Bibek Ghimire</a></li>
+                <li class="cursor-pointer">Free HTML by TemplatesJungle</li>
             </ul>
         </div>
     </footer>
-
-
-
-
-</body>
-
-</html>
-
 </body>
 
 </html>
